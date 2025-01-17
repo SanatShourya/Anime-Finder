@@ -49,8 +49,9 @@ a {
   display: flex;
   flex-direction: column;
   background: linear-gradient(rgba(0, 0, 0, 0.353), rgba(86, 47, 148, 0.5)),
-    url("https://img.freepik.com/free-photo/3d-view-sun-sky-from-room_23-2150953561.jpg?semt=ais_hybrid");
-  background-size: cover;
+    url("https://img.freepik.com/free-photo/3d-view-sun-sky-from-room_23-2150953561.jpg?semt=ais_hybrid");              /* Full viewport height */ /* Path to your image */
+    background-size: 100% 100%;
+ /* Prevent repetition */
 }
 
 .wrapper__header {
@@ -260,8 +261,16 @@ nav {
 }
 
 .anime__wrapper--item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: calc(100%/3);
-    background-color: red;
-    border: 1px solid black;
+    padding-bottom: 50px;
     max-width: 350px;
+
+}
+
+.image__vals {
+    width: 100%;
+    height: 400px;
 }
