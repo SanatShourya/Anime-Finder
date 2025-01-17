@@ -49,9 +49,9 @@ a {
   display: flex;
   flex-direction: column;
   background: linear-gradient(rgba(0, 0, 0, 0.353), rgba(86, 47, 148, 0.5)),
-    url("https://img.freepik.com/free-photo/3d-view-sun-sky-from-room_23-2150953561.jpg?semt=ais_hybrid");              /* Full viewport height */ /* Path to your image */
-    background-size: 100% 100%;
- /* Prevent repetition */
+    url("https://img.freepik.com/free-photo/3d-view-sun-sky-from-room_23-2150953561.jpg?semt=ais_hybrid"); /* Full viewport height */ /* Path to your image */
+  background-size: 100% 100%;
+  /* Prevent repetition */
 }
 
 .wrapper__header {
@@ -90,8 +90,8 @@ nav {
 }
 
 .nav__title {
-    color: #fff;
-    font-size: 28px;
+  color: #fff;
+  font-size: 28px;
 }
 
 .nav__list {
@@ -146,12 +146,12 @@ nav {
 }
 
 .nav__list--button:hover {
-    background-color: rgb(191, 78, 152);
-  }
+  background-color: rgb(191, 78, 152);
+}
 
-  .nav__list--button:hover .white {
-    color: white;
-  }
+.nav__list--button:hover .white {
+  color: white;
+}
 
 /* HEADER */
 
@@ -191,7 +191,7 @@ nav {
 }
 
 .emailbox {
-  width:100%;
+  width: 100%;
   padding: 20px 40% 20px 30px;
   margin: 8% auto;
   border-radius: 50px;
@@ -235,42 +235,77 @@ nav {
 /* Anime Details */
 
 .anime__details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .anime__results {
-    width: 100%;
-    margin: 50px 10px 0px 50px;
-    text-align: left;
+  width: 100%;
+  padding: 50px 10px 0px 20px;
+  text-align: left;
 }
 
 .anime__wrapper {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin:10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px 0px;
 }
 
 .anime__wrapper--item {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: calc(100%/3);
-    padding-bottom: 50px;
-    max-width: 350px;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: calc(100% / 3);
+  padding-bottom: 50px;
+  max-width: 350px;
 }
 
 .image__vals {
-    width: 100%;
-    height: 400px;
+  width: 100%;
+  height: 400px;
+}
+
+/* loading */
+
+.fa-spinner {
+  animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner__wrapper {
+  bottom: 50%;
+  left: 50%;
+}
+
+.spinner {
+  display: none;
+}
+
+.spinner__wrapper {
+  display: block;
+}
+
+.spinner__wrapper .fa-spinner {
+  display: block;
+}
+
+.fa-spinner {
+  font-size: 50px;
+  left: 50%;
 }
