@@ -156,9 +156,8 @@ nav {
 /* HEADER */
 
 .hidden {
-    display: none;
-  }
-  
+  display: none;
+}
 
 .container {
   width: 100%;
@@ -274,26 +273,25 @@ nav {
 }
 
 .anime__wrapper--item {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    border-right: 1px solid rgb(193, 189, 189);
-    border-bottom: 1px solid rgb(193, 189, 189);
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  border-right: 1px solid rgb(193, 189, 189);
+  border-bottom: 1px solid rgb(193, 189, 189);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .anime__description {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: end;
-    padding-top: 10px;
-    text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  padding-top: 10px;
+  text-align: left;
 }
 
 .image__vals {
@@ -302,16 +300,16 @@ nav {
 }
 
 h3 {
-    text-align: left;
-    padding: 10px;
-    padding-left: 0px;
-    text-decoration: underline;
+  text-align: left;
+  padding: 10px;
+  padding-left: 0px;
+  text-decoration: underline;
 }
 
 h4 {
-    text-align: left;
-    padding: 5px 10px;
-    padding-left: 0px;
+  text-align: left;
+  padding: 5px 10px;
+  padding-left: 0px;
 }
 
 /* loading */
@@ -352,5 +350,113 @@ h4 {
 }
 
 .hidden {
+  display: none;
+}
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+  .nav__title {
+    font-size: 24px;
+  }
+
+  .nav__list {
+    max-width: 300px;
+  }
+
+  .nav__link {
+    font-size: 16px;
+  }
+
+  .nav__list--button {
+    font-size: 12px;
+    padding: 10px 0px;
+    width: 100px;
+  }
+
+  .landing__title {
+    font-size: 32px;
+  }
+
+  .email__wrapper {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .emailbox {
+    font-size: 16px;
+  }
+
+  .anime__wrapper--items {
+    width: calc(100% / 2);
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav__logo {
+    width: 50%;
+    text-align: center;
+    border-radius: 50%;
+  }
+  .nav__title {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .nav__list {
+    max-width: 300px;
+    justify-content: end;
+  }
+
+  .nav__list--item:not(:last-child) {
     display: none;
   }
+
+  .nav__link {
+    font-size: 16px;
+  }
+
+  .nav__list--button {
+    font-size: 12px;
+    padding: 10px 0px;
+    width: 100px;
+  }
+
+  .landing__title {
+    font-size: 24px;
+  }
+
+  .email__wrapper {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .emailbox {
+    font-size: 14px;
+    margin-left: 0px;
+    padding-right: 47%;
+  }
+
+  .anime__wrapper--items {
+    width: calc(100% / 2);
+    max-width: 190px;
+    padding-bottom: 40px;
+  }
+
+  .anime__wrapper--item {
+    height: 400px;
+  }
+
+  .image__vals {
+    height: 200px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+}

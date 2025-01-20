@@ -47,7 +47,6 @@ async function hello(category) {
 
   // Update the innerHTML of divTag
 
-
   if (loadingShown) {
     setTimeout(() => {
       divTag.innerHTML = html;
